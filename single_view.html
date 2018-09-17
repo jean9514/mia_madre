@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mia madre single view</title>
+
+
+
+    <!-- CSS  -->
+    <style>
+        body {}
+
+        header {}
+
+        h1 {
+
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+
+        }
+
+        article {
+            clear: both;
+            border: 2px solid black;
+            background-color: #E53A0D;
+
+        }
+
+        section {
+            display: grid;
+            grid-gap: 10px;
+            border: 2px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+
+        /* siden gøres repsonsiv via @mediaqueries sat på main*/
+        @media screen and (min-width: 480px) {
+
+            section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+
+            section {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+
+
+</head>
+
+<!-- HTML -->
+
+<body>
+    <header>
+        <h1> Menu</h1>
+        <nav>
+
+            <button class="foretter" data-kategori="forretter">Foretter</button>
+            <button class="hovedret" data-kategori="hovedretter">Hovedretter</button>
+            <button class="desserter" data-kategori="desserter">Desserter</button>
+            <button class="drikkevare" data-kategori="drikkevarer">Drikkevarer</button>
+
+        </nav>
+
+    </header>
+
+
+    <section class="menu-container">
+
+        <!-- kan denne ikke slettes hvis "bare" man ligeledes flytter grid ud på ARTICLE og det samme gør sig gælende for @media. tjek med MARTIN tirsdag-->
+
+
+        <article>
+
+            <h2 class="ret-navn"></h2>
+            <img class="ret-billede" src="" alt="">
+            <p class="ret-beskrivelse"> </p>
+            <p class="ret-pris"> </p>
+            <p class="ret-genre"> </p>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- JSCRIPT -->
+    <script>
+        //retuner visningen af søgt parameter( window.location.href) fra index_single.html
+        let urlParams = new URLSearchParams(window.location.search);
+
+        //finder det specifikke url parameter.
+        let id = urlParams.get("id");
+
+        // global variable af Array retter.
+        let retter = [];
+
+        // globale variabeler
+        let dest = document.querySelector(".menu-container");
+
+        // hele sidens content loades ved start
+        document.addEventListener("DOMContentLoaded", start);
+
+        // functionen start henter json filen
+        function start() {
+
+            hentJson();
+
+        }
+
+        //definer functionen hentJson
+        async function hentJson() {
+
+            // her skal vi hente Json filen ind ved at kalde på den.
+            let myJsonData = await fetch("menu.json");
+
+            //laver filen om til en json fil
+            retter = await myJsonData.json();
+            visRetter();
+        }
+
+
+        function visRetter() {
+
+
+
+            //løb arry af retter igennem og overholdes betingelserne vises valgte variable.
+            retter.forEach(ret => {
+
+                if (ret.id == id) {
+
+                    console.log(dest);
+
+
+
+                    // LAVER klon og indsætter data i html'en
+                    dest.querySelector("h2").textContent = ret.navn;
+                    dest.querySelector(".ret-billede").src = "pics" + ret.billede + ".png";
+
+                    //                  dest.querySelector(".ret-billede").addEventListener("click", () => {
+                    // window.location.href = "single_view.html?id=".ret.id;
+                    // })
+
+                    dest.querySelector(".ret-billede").alt = "billede af" + ret.billede;
+                    dest.querySelector(".ret-pris").textContent = ret.pris;
+                    dest.querySelector(".ret-beskrivelse").textContent = ret.beskrivelse;
+
+
+                    //VISER klon i html, altså klon bliver sat ind i modtager.
+                    dest.appendChild(klon);
+                }
+
+            });
+        }
+    </script>
+
+    <footer> Babushka Projekt af Jeanette Sofie Bundgaard Madsen</footer>
+</body>
+
+</html>
