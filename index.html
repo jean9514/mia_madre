@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Mia madre Modal View</title>
+
+</head>
+
+<!-- HTML -->
+
+<body>
+
+    <div class="headline">
+        <h1> La cucina mia madre</h1>
+    </div>
+
+    <div class="logo">
+        <img src="logo.svg">
+    </div>
+
+
+
+    <header>
+        <h2> MENU </h2>
+
+        <nav>
+            <button class="foretter" data-genre="forretter">Foretter</button>
+            <button class="hovedret" data-genre="hovedretter">Hovedretter</button>
+            <button class="desserter" data-genre="desserter">Desserter</button>
+            <button class="drikkevare" data-genre="drikkevarer">Drikkevarer</button>
+
+        </nav>
+
+    </header>
+
+
+    <!--MODAL VIEW-->
+
+    <section id="modal">
+        <!-- Hele denne section er som udgangspunkt skjult fra start-->
+        <div id="modal-content">
+            <button>LUK</button>
+            <h2 class="modal-navn"></h2>
+            <img class="modal-billede" src="" alt="">
+            <p class="modal-beskrivelse"> </p>
+
+        </div>
+    </section>
+
+    <section class="menu-container">
+        <!--vi snakker til sectionen i @media og visRetter, så derfor skal den være her selvom den er tom-->
+
+    </section>
+
+    <template class="ret-template">
+        <article>
+
+            <p class="ret-genre"> </p>
+            <img class="ret-billede" src="" alt="">
+            <h2 class="ret-navn"></h2>
+            <p class="ret-beskrivelse"> </p>
+            <p class="ret-pris"> </p>
+
+        </article>
+    </template>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jscript.js"></script>
+
+
+    <footer> La cucina mia madre Projekt af Jeanette Sofie Bundgaard Madsen</footer>
+
+</body>
+
+</html>

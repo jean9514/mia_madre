@@ -1,0 +1,181 @@
+/*ELEMENTER*/
+
+body {
+    background-color: #F4E1B6;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 10% 10% 1fr 10%;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #661D14;
+}
+
+
+h1 {
+
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #661D14;
+    text-shadow: 3px 5px 5px #847D6A;
+    font-size: 3rem;
+}
+
+h2 {
+
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #847D6A;
+}
+
+
+nav {
+    text-align: center;
+}
+
+button {
+    color: #661D14;
+    background-color: #847D6A;
+    margin-bottom: 20px;
+}
+
+section {
+    display: grid;
+    grid-gap: 10px;
+    border: 2px solid #ccc;
+}
+
+p {
+    font-family: "Comic Sans MS";
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+article {
+    clear: both;
+    border: 5px solid #565320;
+    background-color: #847D6A;
+}
+
+article h2 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+article .ret-genre {
+    text-align: center;
+}
+
+article .ret-pris {
+    text-align: center;
+}
+
+article img {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+footer {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #661D14;
+    color: #847D6A;
+}
+
+/*Classer*/
+
+.headline {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.menu-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.5);
+    margin-left: 350px;
+
+}
+
+
+/*ID'er - MODAL VIEW */
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #F4E1B6;
+    text-align: center;
+
+    /*display: none;*/
+    /*opacity bruges her i stedet for display da vi ønsker en fade effect på vores visning af billeder*/
+    opacity: 0;
+
+    /*SKAL sættes til NONE for at kunne vise billedet der er valgt.            */
+    pointer-events: none;
+
+    transition: all 1s;
+}
+
+#modal-content {
+    width: 70vw;
+    height: 70vh;
+    background-color: #847D6A;
+    align-self: center;
+    margin-left: 150px;
+}
+
+#modal.vis {
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+#modal-billede {
+    height: 50vh;
+    object-fit: scale-down;
+}
+
+#modal h2 {
+    color: black;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* siden gøres repsonsiv via @mediaqueries sat på main*/
+@media screen and (min-width: 480px) {
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
