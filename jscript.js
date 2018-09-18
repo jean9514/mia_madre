@@ -53,7 +53,7 @@ function visRetter() {
 
             console.log(ret.genre, kategoriFilter);
 
-            //                   dest.textContent = "";
+            //  dest.textContent = "";
 
             // laver klon af indholdet i <article>
             let klon = temp.cloneNode(true).content;
@@ -68,7 +68,6 @@ function visRetter() {
                 visModal(ret);
             })
             klon.querySelector(".ret-billede").alt = "billede af" + ret.billede;
-            klon.querySelector(".ret-beskrivelse").textContent = ret.beskrivelse;
             klon.querySelector(".ret-pris").textContent = ret.pris;
             klon.querySelector(".ret-genre").textContent = ret.genre;
 
@@ -87,6 +86,7 @@ function visModal(retten) {
     modal.querySelector(".modal-navn").textContent = retten.navn;
     modal.querySelector(".modal-billede").src = "pics/" + retten.billede + ".png";
     modal.querySelector(".modal-beskrivelse").textContent = retten.beskrivelse;
+    modal.querySelector(".modal-pris").textContent = retten.pris;
 
 
     //ved klik fjernes modal vindu med indholdet.

@@ -47,7 +47,7 @@ section {
     border: 2px solid #ccc;
 }
 
-p {
+section p {
     font-family: "Comic Sans MS";
     margin-left: 40px;
     margin-right: 40px;
@@ -81,6 +81,7 @@ article .ret-pris {
 article img {
     margin-left: 80px;
     margin-right: 80px;
+    border: 5px solid #565320;
 }
 
 footer {
@@ -93,6 +94,16 @@ footer {
 
 /*Classer*/
 
+
+
+.menu-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 .headline {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -101,26 +112,6 @@ footer {
 
 }
 
-.forside-billede img {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transform: scale(4);
-    margin-left: 350px;
-
-}
-
-.menu-container {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 .logo img {
 
@@ -130,6 +121,10 @@ footer {
     transform: scale(1.5);
     margin-left: 350px;
 
+}
+
+.modal-billede {
+    border: 5px solid #565320;
 }
 
 
@@ -158,17 +153,23 @@ footer {
     background-color: #847D6A;
     align-self: center;
     margin-left: 150px;
+    border: 5px solid #565320;
 }
 
 #modal.vis {
     opacity: 1;
     pointer-events: all;
 
+
 }
 
 #modal-billede {
+    /*
     height: 50vh;
-    object-fit: scale-down;
+    object-fit: scale-down;*/
+
+
+
 }
 
 #modal h2 {

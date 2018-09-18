@@ -1,98 +1,105 @@
 [
     {
         "navn": "Fish stew",
-        "genre": "forretter",
+        "genre": "Forretter",
         "billede": "skaldyrsret",
         "pris": "Pris 130kr",
         "beskrivelse": "Denne farverige one-pot wonder fejre både fisk og skaldyr med smage der er klædelige og ikke mindst fantastiske."
    },
     {
         "navn": "Tomat, rødvin og chorizo risotto",
-        "genre": "forretter",
+        "genre": "Forretter",
         "billede": "tomat_risotto",
         "pris": "Pris 160kr",
         "beskrivelse": "Denne creamede risotto rummer store fyldige smage af fyldig rødvin og spicy chorizo"
    },
     {
         "navn": "Pasta & grønne oliven",
-        "genre": "forretter",
+        "genre": "Forretter",
         "billede": "pastaOliven",
         "pris": "Pris 140kr",
         "beskrivelse": "Simpel pastra ret, lavet med frisk pasta solmoden oliven, en snert af chili og hjemmelavet tomat saucse. Rent comfort food, ligesom mor lavede den"
    },
     {
         "navn": "Knasende sprød pizza",
-        "genre": "forretter",
+        "genre": "Forretter",
         "billede": "pizzaMRucculaogParma",
         "pris": "Pris 145kr",
         "beskrivelse": "knasende sprød bund, hjemmelaved tomat sauce, tynde skiver af let saltet parma skinke, ruccula og parmasan flager"
    },
     {
         "navn": "Okse kæbe ragu",
-        "genre": "hovedretter",
+        "genre": "Hovedretter",
         "billede": "oksekæbe_ragu",
         "pris": "Pris 185kr",
         "beskrivelse": "Okse kæbe er et utroligt stykke kød, når det braseres langsomt er det en af de absolutte mest fantastiske udskæringer på koen. Retten serveres med silke blød polenta."
    },
     {
         "navn": "Aubergine parmigiana",
-        "genre": "Hhovedretter",
+        "genre": "Hovedretter",
         "billede": "Aubergine",
         "pris": "Pris 160kr",
         "beskrivelse": "Parmigiana er helt fantastisk minde blowing italiensk soul food."
    },
     {
-        "navn": "spagetti og kødboller",
-        "genre": "hovedretter",
+        "navn": "Spagetti og kødboller",
+        "genre": "Hovedretter",
         "billede": "meetballs",
         "pris": "Pris 140kr",
         "beskrivelse": "den ultimative familie dele ret."
    },
     {
         "navn": "Canollie",
-        "genre": "desserter",
+        "genre": "Desserter",
         "billede": "canollie",
         "pris": "Pris 65kr",
         "beskrivelse": "Klassikker i det italienske dessert køkken. Sprød filodej med creamet mascerpone og masser af vanilie"
    },
     {
         "navn": "Tiramisú",
-        "genre": "desserter",
+        "genre": "Desserter",
         "billede": "tiramisu",
         "pris": "Pris 85kr",
         "beskrivelse": "Klassik Italiensk dessert med pisket mascarpone og ricotta ost tilsat et shot af espresso og vanillie."
    },
     {
         "navn": "Valpolisella",
-        "genre": "drikkevarer",
+        "genre": "Drikkevarer",
         "billede": "valpolisella",
         "pris": "Pris 165kr",
         "beskrivelse": "fyldig smag af tørrede røde frugter. God til kødretter"
    },
     {
         "navn": "Veneto",
-        "genre": "drikkevarer",
+        "genre": "Drikkevarer",
         "billede": "venetoRødvin",
         "pris": "Pris 165kr",
         "beskrivelse": "fyldig smag af tørrede røde frugter. God til kødretter"
    },
     {
         "navn": "San Pellegrino",
-        "genre": "drikkevarer",
+        "genre": "Drikkevarer",
         "billede": "sanpellegrino",
         "pris": "Pris 45kr",
         "beskrivelse": "let boblende vand"
    },
     {
+        "navn": "Galvanina",
+        "genre": "Drikkevarer",
+        "billede": "galvanian",
+        "pris": "Pris 35kr",
+        "beskrivelse": "Lækker læskende italiensk sodanvand, let perlende. Fås i flere varianter"
+   },
+    {
         "navn": "Espresso",
-        "genre": "drikkevarer",
+        "genre": "Drikkevarer",
         "billede": "espresso",
         "pris": "Pris 35kr",
         "beskrivelse": "klassisk italiensk kaffe shot, perfekt efter en god middag"
    },
     {
         "navn": "Kaffe latte",
-        "genre": "drikkevarer",
+        "genre": "Drikkevarer",
         "billede": "kaffe-latte",
         "pris": "Pris 45kr",
         "beskrivelse": "Espresso shot med skummet varm mælk"
