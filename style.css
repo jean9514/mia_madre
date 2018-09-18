@@ -1,4 +1,4 @@
-/*ELEMENTER*/
+/*ELEMENTER: styling af div. elementer, farver, fonte, size, pics osv.*/
 
 body {
     background-color: #F4E1B6;
@@ -92,7 +92,7 @@ footer {
     color: #847D6A;
 }
 
-/*Classer*/
+/*Classer: placering i grit mm.  */
 
 
 
@@ -128,7 +128,7 @@ footer {
 }
 
 
-/*ID'er - MODAL VIEW */
+/*ID'er - MODAL VIEW : styling af farver, fontet, pics osv.*/
 
 #modal {
     width: 100vw;
@@ -163,15 +163,6 @@ footer {
 
 }
 
-#modal-billede {
-    /*
-    height: 50vh;
-    object-fit: scale-down;*/
-
-
-
-}
-
 #modal h2 {
     color: black;
 }
@@ -180,6 +171,7 @@ footer {
 /*MEDIA QUERIES*/
 
 /* siden gøres repsonsiv via @mediaqueries sat på main*/
+
 @media screen and (min-width: 480px) {
 
     section {

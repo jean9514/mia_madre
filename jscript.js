@@ -44,6 +44,7 @@ function visRetter() {
     let display = document.querySelector(".menu-container");
     let temp = document.querySelector(".ret-template");
 
+    //tømmer liste efter sortering.
     display.textContent = "";
 
     //løb arry af retter igennem og overholdes betingelserne vises valgte variable.
@@ -51,9 +52,8 @@ function visRetter() {
 
         if (ret.genre == kategoriFilter || kategoriFilter == "alle") {
 
-            console.log(ret.genre, kategoriFilter);
+            // console.log(ret.genre, kategoriFilter);
 
-            //  dest.textContent = "";
 
             // laver klon af indholdet i <article>
             let klon = temp.cloneNode(true).content;
@@ -93,6 +93,7 @@ function visModal(retten) {
     modal.querySelector("button").addEventListener("click", skjulModal);
 }
 
+//skjuler igen modal efter endt visning.
 function skjulModal() {
     modal.classList.remove("vis");
 }
