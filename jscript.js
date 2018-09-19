@@ -54,10 +54,8 @@ function visRetter() {
 
             // console.log(ret.genre, kategoriFilter);
 
-
             // laver klon af indholdet i <article>
             let klon = temp.cloneNode(true).content;
-
 
             // Indsætter værdier i klon( navn, billede osv)
             klon.querySelector("h2").textContent = ret.navn;
@@ -71,8 +69,7 @@ function visRetter() {
             klon.querySelector(".ret-pris").textContent = ret.pris;
             klon.querySelector(".ret-genre").textContent = ret.genre;
 
-
-            //VISER klon i html, altså klon bliver sat over i modtager dest, dest(ination) er her "menu-conteiner".
+            //VISER klon i html, altså klon bliver sat over i modtager dest, dest(ination) er her "menu-container".
             display.appendChild(klon);
         }
 
