@@ -1,10 +1,11 @@
-/*ELEMENTER: styling af div. elementer, farver, fonte, size, pics osv.*/
+/*ELEMENTER:*/
 
 body {
     background-color: #F4E1B6;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 10% 10% 30% 1fr 10%;
+    /*    rows defineres i vh da % er relativt i forhold til sidens længde*/
+    grid-template-rows: 20vh 15vh 60vh 1fr 10vh;
 }
 
 header {
@@ -38,6 +39,7 @@ nav {
 button {
     color: #661D14;
     background-color: #847D6A;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -92,8 +94,7 @@ footer {
     color: #847D6A;
 }
 
-/*Classer: placering i grit mm.  */
-
+/*Classer:*/
 
 
 .menu-container {
@@ -123,12 +124,36 @@ footer {
 
 }
 
+
+.splash {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+
+}
+
+.splash img {
+    display: block;
+    position:relative;
+    max-width: 100%;
+    height: auto;
+    transform: scale(2.3);
+    margin: auto;
+    margin-top: 130px;
+    border: 3px solid #565320;
+
+}
+}
+
 .modal-billede {
     border: 5px solid #565320;
 }
 
 
-/*ID'er - MODAL VIEW : styling af farver, fontet, pics osv.*/
+/*ID'er - MODAL VIEW.*/
 
 #modal {
     width: 100vw;
