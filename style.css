@@ -110,20 +110,25 @@ footer {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-left: 250px;
 
 }
 
+.headline img {
 
-.logo img {
-
-    display: block;
+    display: inline-block;
+    position: relative;
     max-width: 100%;
-    height: auto;
-    transform: scale(1.5);
-    margin-left: 350px;
+    height: 100px;
+    margin: auto;
 
 }
 
+.headline h1 {
+    display: inline-block;
+
+
+}
 
 .splash {
 
@@ -137,7 +142,7 @@ footer {
 
 .splash img {
     display: block;
-    position:relative;
+    position: relative;
     max-width: 100%;
     height: auto;
     transform: scale(2.3);

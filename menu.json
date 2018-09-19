@@ -63,6 +63,13 @@
         "beskrivelse": "Klassik Italiensk dessert med pisket mascarpone og ricotta ost tilsat et shot af espresso og vanillie."
    },
     {
+        "navn": "Panna cotta",
+        "genre": "Desserter",
+        "billede": "panna-cotta",
+        "pris": "Pris 85kr",
+        "beskrivelse": "Klassik Italiensk dessert fed og creamet fløde budding med masser af vanilie tilsat en lækker hjemmelavet saltet karamel sause."
+   },
+    {
         "navn": "Valpolisella",
         "genre": "Drikkevarer",
         "billede": "valpolisella",
